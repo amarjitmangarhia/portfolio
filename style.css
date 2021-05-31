@@ -109,9 +109,22 @@ main button:hover {
     align-items: center;
   }
 
-  main,
-  .name {
+  main .name {
     font-size: 61px;
+    color: #2e00ff;
+    font-family: "Secular One", sans-serif;
+    line-height: 60px;
+  }
+
+  main .info {
+    color: #2e00ff;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  main .info,
+  .job {
+    font-size: 16px;
   }
 }
 
