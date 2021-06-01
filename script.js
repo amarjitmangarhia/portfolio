@@ -1,13 +1,13 @@
-const navBar = document.querySelector(".nav");
+const menu = document.querySelector(".menu");
 const hamburger = document.querySelector(".hamburger");
 
 let a = false;
 hamburger.addEventListener("click", function () {
   if (!a) {
-    navBar.style.visibility = "visible";
+    menu.style.visibility = "visible";
     a = true;
   } else {
-    navBar.style.visibility = "hidden";
+    menu.style.visibility = "hidden";
     a = false;
   }
 });
