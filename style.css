@@ -114,6 +114,10 @@ main button:hover {
   .nav {
     display: none;
   }
+  
+   .hamburger div {
+    display: none;
+  }
 
   main {
     margin: 10px 1em 0px 1em;
