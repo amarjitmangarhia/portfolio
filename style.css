@@ -112,7 +112,7 @@ main button:hover {
   }
 
   .nav {
-    font-size: 12px;
+    display: none;
   }
 
   main {
