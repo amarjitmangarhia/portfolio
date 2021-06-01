@@ -22,13 +22,6 @@ navbar {
   align-items: center;
 }
 
-main {
-  margin: 10px 17em 0px 17em;
-  display: flex;
-  padding: 15px;
-  align-items: center;
-}
-
 navbar p {
   font-size: 26px;
 }
@@ -37,10 +30,32 @@ navbar p {
   list-style: none;
   margin-left: auto;
   display: flex;
+  opacity: 100%;
+  visibility: hidden;
 }
 
 .nav li {
   margin-left: 40px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin-top: 5px;
+  transform: translate(10px, -2px);
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  margin: 10px 17em 0px 17em;
+  display: flex;
+  padding: 15px;
+  align-items: center;
 }
 
 .name {
@@ -96,9 +111,8 @@ main button:hover {
     align-items: center;
   }
 
-  li:nth-child(1),
-  li:nth-child(3) {
-    display: none;
+  .nav {
+    font-size: 12px;
   }
 
   main {
