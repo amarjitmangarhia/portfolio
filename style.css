@@ -10,15 +10,15 @@ a {
 .container {
   margin-left: 16em;
   margin-right: 16em;
+}
 
+.first {
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .navbar {
-  /* background-color: red; */
   display: flex;
   align-items: center;
 }
@@ -37,13 +37,24 @@ a {
 }
 
 .navbar li {
+  padding: 15px 15px 15px 15px;
   margin-left: 50px;
   margin-right: 20px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+
+.navbar li:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 10px;
 }
 
 .hamburger div {
   width: 25px;
-  height: 1px;
+  height: 2px;
   background-color: black;
   margin-top: 5px;
   margin-right: 10px;
@@ -54,7 +65,8 @@ a {
 .main .name {
   margin-top: 10px;
   font-size: 100px;
-  color: #2e00ff;
+  /* color: #2e00ff; */
+  color: black;
   font-family: "Secular One", sans-serif;
   line-height: 81px;
   margin-bottom: 70px;
@@ -70,12 +82,25 @@ a {
   margin-bottom: -15px;
 }
 
+.back {
+  background-color: black;
+  color: white;
+  transform: rotate(-5deg);
+  padding: 10px;
+  transition: 0.4s;
+}
+
+.back:hover {
+  transform: rotate(0deg);
+  transition: 0.4s;
+}
+
 .main button {
   font-family: "Oxygen Mono", monospace;
   margin-top: 50px;
   width: 25em;
   height: 53px;
-  border: 1px solid #2e00ff;
+  border: 1px solid #020202;
   color: #2e00ff;
   transition: 0.2s;
 }
@@ -86,7 +111,21 @@ a {
   transition: 0.2s;
 }
 
+.social-icons {
+  margin-top: 40px;
+  width: 600px;
+}
+
+.fa {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 20px;
+  text-align: center;
+}
+
 .footer {
+  margin-top: 20px;
   padding: 20px;
   background-color: #ffffcf;
   display: flex;
@@ -97,12 +136,52 @@ a {
   margin-left: auto;
 }
 
-@media (max-width: 500px) {
-  .container {
-    margin-left: 1px;
-    margin-right: 1px;
+/* MY-WORK */
 
-    height: 100vh;
+.my-work {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+
+.card {
+  border: 2px solid black;
+  height: 200px;
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+.heading {
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+
+.button {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.button:hover {
+  transition: 0.1s;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+  .container {
+    margin-left: 5em;
+    margin-right: 5em;
+
     display: grid;
     grid-template-rows: auto 1fr auto;
     /* grid-template-columns: repeat(3, 1fr); */
@@ -129,13 +208,15 @@ a {
 
   .navbar li {
     display: none;
+    font-weight: 600;
+
     /* margin-left: 50px;
     margin-right: 20px; */
   }
 
   .hamburger div {
     width: 25px;
-    height: 1px;
+    height: 2px;
     background-color: black;
     margin-top: 5px;
     margin-right: 10px;
@@ -146,7 +227,9 @@ a {
   .main .name {
     margin-top: -5px;
     font-size: 60px;
-    color: #2e00ff;
+    /* color: #2e00ff; */
+    color: black;
+
     font-family: "Secular One", sans-serif;
     line-height: 60px;
     margin-bottom: 30px;
@@ -187,5 +270,103 @@ a {
 
   .social-links {
     text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin-left: 1px;
+    margin-right: 1px;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
+
+  .navbar {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar p {
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .navbar .menu {
+    margin-left: auto;
+  }
+
+  .navbar li {
+    display: none;
+    font-weight: 600;
+
+    /* margin-left: 50px;
+    margin-right: 20px; */
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin-top: 5px;
+    margin-right: 10px;
+    transform: translate(-0.5em, -2px);
+    position: relative;
+  }
+
+  .main .name {
+    margin-top: -5px;
+    font-size: 60px;
+    /* color: #2e00ff; */
+    color: black;
+
+    font-family: "Secular One", sans-serif;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .main .info,
+  .job {
+    font-size: 20px;
+  }
+
+  .main .info {
+    color: #2e00ff;
+    margin-bottom: -10px;
+  }
+
+  .main button {
+    font-family: "Oxygen Mono", monospace;
+    margin-top: 40px;
+    width: 25em;
+    height: 53px;
+    border: 1px solid #2e00ff;
+    color: #2e00ff;
+    transition: 0.2s;
+  }
+
+  .main button:hover {
+    color: white;
+    background-color: #2e00ff;
+    transition: 0.2s;
+  }
+
+  .footer {
+    background-color: #ffffcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links {
+    text-align: center;
+    margin-left: 0;
   }
 }
