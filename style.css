@@ -1,372 +1,140 @@
-body {
-  font-family: "Oxygen Mono", monospace;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: #2e00ff;
+#navbar {
+  background-color: #be3144;
+  border-bottom: 2px solid rgb(54, 54, 54);
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
 }
 
-.container {
-  margin-left: 16em;
-  margin-right: 16em;
-}
-
-.first {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-}
-
-.navbar p {
-  font-size: 27px;
-}
-
-.navbar ul {
+ul {
   list-style: none;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.navbar .menu {
-  margin-left: auto;
+li {
+  padding: 25px;
 }
 
-.navbar li {
-  padding: 15px 15px 15px 15px;
-  margin-left: 50px;
-  margin-right: 20px;
-  font-weight: 600;
-  transition: 0.4s;
-}
-
-.navbar li:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  transition: 0.4s;
-  border-radius: 10px;
-}
-
-.hamburger div {
-  width: 25px;
-  height: 2px;
-  background-color: black;
-  margin-top: 5px;
-  margin-right: 10px;
-  transform: translate(0px, -2px);
-  position: relative;
-}
-
-.main .name {
-  margin-top: 10px;
-  font-size: 100px;
-  /* color: #2e00ff; */
-  color: black;
-  font-family: "Secular One", sans-serif;
-  line-height: 81px;
-  margin-bottom: 70px;
-}
-
-.main .info,
-.job {
-  font-size: 25px;
-}
-
-.main .info {
-  color: #2e00ff;
-  margin-bottom: -15px;
-}
-
-.back {
-  background-color: black;
-  color: white;
-  transform: rotate(-5deg);
-  padding: 10px;
-  transition: 0.4s;
-}
-
-.back:hover {
-  transform: rotate(0deg);
-  transition: 0.4s;
-}
-
-.main button {
-  font-family: "Oxygen Mono", monospace;
-  margin-top: 50px;
-  width: 25em;
-  height: 53px;
-  border: 1px solid #020202;
-  color: #2e00ff;
-  transition: 0.2s;
-}
-
-.main button:hover {
-  color: white;
-  background-color: #2e00ff;
-  transition: 0.2s;
-}
-
-.social-icons {
-  margin-top: 40px;
-  width: 600px;
-}
-
-.fa {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  width: 20px;
-  text-align: center;
-}
-
-.footer {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #ffffcf;
+#welcome-section {
+  height: 100vh;
+  background-color: #313235;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.social-links {
-  margin-left: auto;
-}
-
-/* MY-WORK */
-
-.my-work {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-}
-
-.card {
-  border: 2px solid black;
-  height: 200px;
-  grid-column: 1 / -1;
-  position: relative;
-}
-
-.heading {
-  padding: 10px;
-  color: white;
-  background-color: black;
-}
-
-.button {
   text-align: center;
-  background-color: black;
+}
+
+#welcome-section h1 {
+  font-size: 60px;
   color: white;
-  width: 100px;
-  padding: 5px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  font-weight: 500;
+  margin-bottom: -8px;
 }
 
-.button:hover {
-  transition: 0.1s;
-  font-weight: 600;
-  cursor: pointer;
+#welcome-section p {
+  font-size: 30px;
+  color: #be3144;
+  font-style: italic;
+  font-weight: 200;
 }
 
-/* MEDIA QUERIES */
+#projects {
+  height: 100%;
+  padding: 80px 30px;
+  background-color: #45567d;
+}
 
-@media (max-width: 1000px) {
-  .container {
-    margin-left: 5em;
-    margin-right: 5em;
+#projects h2 {
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin-bottom: 40px;
+}
 
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    /* grid-template-columns: repeat(3, 1fr); */
+.under-line {
+  border-bottom: 2px solid white;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 350px));
+  justify-content: center;
+  gap: 30px;
+}
+
+#projects img {
+  display: block;
+  width: 100%;
+}
+
+.project-tile {
+  background-color: rgb(202, 196, 196);
+}
+
+.project-tile .link-text {
+  display: block;
+  background-color: #303841;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 815px) {
+  #navbar {
+    font-weight: 500;
+    font-size: 18px;
   }
 
-  .navbar {
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
+  #welcome-section h1 {
+    font-size: 45px;
+    font-weight: 400;
   }
 
-  .navbar p {
-    font-size: 20px;
+  #welcome-section p {
+    font-size: 25px;
+    font-weight: 200;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #navbar {
+    font-weight: 400;
+    font-size: 4vw;
   }
 
-  .navbar ul {
-    list-style: none;
-    display: flex;
+  #welcome-section h1 {
+    font-size: 8vw;
+    font-weight: 400;
+    margin-bottom: 5px;
   }
 
-  .navbar .menu {
-    margin-left: auto;
+  #welcome-section p {
+    font-size: 6vw;
+    font-weight: 200;
   }
 
-  .navbar li {
-    display: none;
-    font-weight: 600;
-
-    /* margin-left: 50px;
-    margin-right: 20px; */
+  #projects {
+    padding: 40px 30px;
   }
 
-  .hamburger div {
-    width: 25px;
-    height: 2px;
-    background-color: black;
-    margin-top: 5px;
-    margin-right: 10px;
-    transform: translate(-0.5em, -2px);
-    position: relative;
-  }
-
-  .main .name {
-    margin-top: -5px;
-    font-size: 60px;
-    /* color: #2e00ff; */
-    color: black;
-
-    font-family: "Secular One", sans-serif;
-    line-height: 60px;
+  #projects h2 {
+    font-size: 10vw;
     margin-bottom: 30px;
-  }
-
-  .main .info,
-  .job {
-    font-size: 20px;
-  }
-
-  .main .info {
-    color: #2e00ff;
-    margin-bottom: -10px;
-  }
-
-  .main button {
-    font-family: "Oxygen Mono", monospace;
-    margin-top: 40px;
-    width: 25em;
-    height: 53px;
-    border: 1px solid #2e00ff;
-    color: #2e00ff;
-    transition: 0.2s;
-  }
-
-  .main button:hover {
-    color: white;
-    background-color: #2e00ff;
-    transition: 0.2s;
-  }
-
-  .footer {
-    background-color: #ffffcf;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-links {
-    text-align: center;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .container {
-    margin-left: 1px;
-    margin-right: 1px;
-
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    /* grid-template-columns: repeat(3, 1fr); */
-  }
-
-  .navbar {
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-  }
-
-  .navbar p {
-    font-size: 20px;
-  }
-
-  .navbar ul {
-    list-style: none;
-    display: flex;
-  }
-
-  .navbar .menu {
-    margin-left: auto;
-  }
-
-  .navbar li {
-    display: none;
-    font-weight: 600;
-
-    /* margin-left: 50px;
-    margin-right: 20px; */
-  }
-
-  .hamburger div {
-    width: 25px;
-    height: 2px;
-    background-color: black;
-    margin-top: 5px;
-    margin-right: 10px;
-    transform: translate(-0.5em, -2px);
-    position: relative;
-  }
-
-  .main .name {
-    margin-top: -5px;
-    font-size: 60px;
-    /* color: #2e00ff; */
-    color: black;
-
-    font-family: "Secular One", sans-serif;
-    line-height: 60px;
-    margin-bottom: 30px;
-  }
-
-  .main .info,
-  .job {
-    font-size: 20px;
-  }
-
-  .main .info {
-    color: #2e00ff;
-    margin-bottom: -10px;
-  }
-
-  .main button {
-    font-family: "Oxygen Mono", monospace;
-    margin-top: 40px;
-    width: 25em;
-    height: 53px;
-    border: 1px solid #2e00ff;
-    color: #2e00ff;
-    transition: 0.2s;
-  }
-
-  .main button:hover {
-    color: white;
-    background-color: #2e00ff;
-    transition: 0.2s;
-  }
-
-  .footer {
-    background-color: #ffffcf;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-links {
-    text-align: center;
-    margin-left: 0;
   }
 }
