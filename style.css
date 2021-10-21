@@ -195,7 +195,7 @@ li {
 
 @media screen and (max-width: 410px) {
   #navbar {
-    font-weight: 400;
+        font-weight: 600;
     font-size: 4vw;
   }
 
