@@ -141,7 +141,7 @@ li {
   transition: 0.4s ease-in-out;
 }
 
-#profile-link {
+#contact {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -155,11 +155,11 @@ li {
   border-bottom: 5px solid #be3144;
 }
 
-#profile-link h3 {
+#contact h3 {
   font-size: 5vw;
   text-align: center;
 }
-#profile-link p {
+#contact p {
   text-align: center;
   font-style: italic;
   font-weight: 200;
