@@ -1,0 +1,51 @@
+.container {
+    display: block;
+    background-color: rgb(1, 1, 1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    height: 100vh;
+    z-index: 1;
+    opacity: 0.9;
+    width: 100%;
+    padding: 20px;
+    transition: 1s;
+}
+
+.container .close {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+
+}
+
+ul {
+    margin-top: 20px;
+    padding: 20px;
+    padding-right: 25px;
+}
+
+ul li {
+    list-style: none;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    
+
+    ul li {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    }
+}

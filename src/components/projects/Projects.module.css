@@ -1,0 +1,37 @@
+.container {
+    height: 100%;
+    background-color: #F8F2F2;
+    padding: 50px;
+}
+
+.content h2 {
+    color: #5E5B5B;
+    font-size: 5em;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+
+.content p {
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin: 10px 0;
+}
+
+@media  screen and (max-width: 570px) {
+    
+
+    .container {
+        height: 100%;
+        background-color: #F8F2F2;
+        padding: 20px;
+    }
+}
+
+@media  screen and (max-width: 430px) {
+    .content h2 {
+        font-size: 3em;
+    }
+
+    
+}

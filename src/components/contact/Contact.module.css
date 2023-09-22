@@ -1,0 +1,203 @@
+.container {
+    background-color: #EDD6B8;
+    padding: 50px;
+    height: 100%;
+}
+
+.touch  {
+    font-size: 3em;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.help {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 500;
+    color: #5c5c5c;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+.contactInfo p {
+    text-align: center;
+}
+
+.address, .phone, .email {
+    text-align: center;
+    margin: 10px 20px;
+    background-color: #fdf4e8;
+    padding: 10px;
+    border-radius: 20px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.2s;
+}
+
+.address:hover, .phone:hover, .email:hover {
+    background-color: #f7efe4;
+    cursor: pointer;
+scale: 1.1;
+}
+
+.address svg, .phone svg, .email svg {
+    margin: 5px 0;
+}
+
+.details label, .messageBox{
+font-size: 1.3em;
+margin: 8px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #fdf4e8;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    height: 100%;
+    max-height: 800px;
+}
+
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username, .useremail, .userphone {
+    margin: 10px;
+}
+
+.username label, .useremail label, .userphone label, .messageBox label {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.messageBox {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    height: 400px;
+    max-height: 500px;
+    width: 500px;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.content input[type=text] {
+    padding: 5px;
+    width: 300px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.messageBox textarea {
+    height: 100%;
+    width: 100%;
+    max-height: 300px;
+    max-width: 350px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.button {
+    text-align: center;
+}
+
+.contactForm button {
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.error {
+    border: 5px solid red;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        height: 100%;
+        padding: 50px 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+        max-width: 600px;
+        border-radius: 0px;
+    }
+
+    .messageBox {
+        /* border: 5px solid red; */
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 5px;
+
+
+        height: 100%;
+        max-height: 900px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .messageBox textarea {
+        height: 100%;
+        max-height: 500px;
+        width: 100%;
+        max-width: 500px;
+        max-width: 500px;
+        border-radius: 10px;
+        border: 1px solid;
+        padding: 5px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+   
+    
+    .address, .phone, .email {
+        width: 100%;
+        
+    }
+
+    .content input[type=text] {
+        padding: 5px;
+        width: 250px;
+        border-radius: 10px;
+
+        border-radius: 10px;
+    }
+    }
