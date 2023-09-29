@@ -1,32 +1,35 @@
 import React, { useRef, useState } from 'react'
 import styles from "./Contact.module.css"
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
     const [error, setError] = useState(false);
+    let text = "thanks"
+    const [showForm, setShowForm] = useState(true)
+    
+    const form = useRef();
 
-    const userName = useRef();
-    const userEmail = useRef();
-    const userPhone = useRef();
-    const userText = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    
+        emailjs.sendForm('service_mdxbfbc', 'template_hkh9kcb', form.current, 'EC5SUwKQgu1g3-CdC')
+          .then((result) => {
+              console.log(result);
 
-        let name = userName.current.value;
-        let email = userEmail.current.value;
-        let phone = userPhone.current.value;
-        let message = userText.current.value;
 
-        if(name === "") {
-            console.log("none")
-            setError(true)
-            console.log(error)
-        } else {
-            console.log(error)
-        }
+              if(result.status === 200) {
+                setShowForm(false)
+                console.log(form)
 
-    }
+              }
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
+
+   
     return (
         <div id='section_contact' className={styles.container}>
             <p className={styles.touch}>Get In Touch!</p>
@@ -52,32 +55,35 @@ const Contact = () => {
                     <p>amarjitmangarhia@gmail.com</p>
                 </div>
             </div>
-            <div className={styles.contactForm}>
+
+
+            
+            <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
                 <div className={styles.content}>
                     <div className={styles.details}>
                         <div className={styles.username}>
                             <label htmlFor="name">Your Name</label> <br />
-                            <input ref={userName} type="text" />
+                            <input name="user_name" type="text" required/>
                         </div>
                         <div className={styles.useremail}>
                             <label htmlFor="email">Mail</label> <br />
-                            <input ref={userEmail} type="text" />
+                            <input name="user_email" type="text" required/>
                         </div>
                         <div className={styles.userphone}>
-                            <label htmlFor="phone">Phone</label><br />
-                            <input ref={userPhone} type="text" />
+                            <label htmlFor="phone">Phone (optional)</label><br />
+                            <input name="user_phone" type="text" />
                         </div>
                     </div>
                     <div className={styles.messageBox}>
                         <label>Message</label> <br />
-                        <textarea ref={userText} name="message" id="message" rows="5" cols="5"></textarea>
+                        <textarea name="message" id="message" rows="5" cols="5" required></textarea>
                     </div>
                 </div>
                 <div className={styles.button}>
-                    <button onClick={handleSubmit}>Send Message</button>
+                    <button type='submit' value='Send'> {showForm ? "Send Message" : "Your Message has been sent!"}  </button>
                 </div>
+            </form>
             </div>
-        </div>
     )
 }
 
