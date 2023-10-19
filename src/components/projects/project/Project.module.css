@@ -54,6 +54,7 @@
 
 .projectInfo  {
     padding: 10px 20px;
+    min-height: 180px;
 }
 
 .projectInfo button {

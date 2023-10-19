@@ -5,6 +5,7 @@ import weather_app from "../../images/projectImages/weather_app.png"
 import quotes_app from "../../images/projectImages/quotes_app.png"
 import twitter_app from "../../images/projectImages/twitter.png"
 import guess_number_game from "../../images/projectImages/guess_number_game.png"
+import cricket from "../../images/projectImages/cricket.png"
 
 const Projects = () => {
     return (
@@ -19,7 +20,8 @@ const Projects = () => {
                 <Project image={quotes_app} appName={"Quotes App"} link={"https://amar-quotes.netlify.app/quotes"} appDescription={"The Great Quotes App is a React-based web application designed for users to explore, save, and share inspiring quotes."}/>
                 {/* <Project image={twitter_app} appName={"Twitter Clone App"} link={"https://am-twitter-clone.netlify.app/"} appDescription={"The React Twitter Clone offers a simplified Twitter-like experience. Post tweets, follow users, and engage with content seamlessly. User-friendly and intuitive for quick social networking."}/> */}
                 <Project image={guess_number_game} appName={"Guess Number Game"} link={"https://guess-number-game-main.vercel.app/"} appDescription={"Welcome to the Guess Number Game! Your challenge is to guess a number between 1 and 20. After making your guess, the game will reveal the hidden number to see if you've guessed correctly."}/>
-            
+                <Project image={cricket} appName={"Cricket Score Counter"} link={"https://gullicricket.netlify.app/"} appDescription={"Fun Project to count cricket score. Count each ball with score, wickets, no ball, six and four."}/>
+
             </div>
         </div>
     )
