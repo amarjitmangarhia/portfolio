@@ -18,6 +18,14 @@
     margin: 10px 0;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 @media  screen and (max-width: 570px) {
     
 

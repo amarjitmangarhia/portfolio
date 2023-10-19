@@ -10,7 +10,9 @@ const Project = ({image,appName,appDescription, link}) => {
                         <p>{appName}</p>
                     </div>
                     <div className={styles.projectDescription}>
+                        <div className={styles.image}>
                         <img src={image} alt="demo_image" />
+                        </div>
                         <div className={styles.projectInfo}>
                             <p>{appDescription}</p>
                             <button> <Link to={link} style={{textDecoration: 'none', color: "white"}} >Explore</Link> </button>

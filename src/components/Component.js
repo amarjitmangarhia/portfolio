@@ -3,6 +3,7 @@ import Contact from "../components/contact/Contact";
 import Home from  "../components/home/Home"
 import Projects from "../components/projects/Projects"
 import Skills from "../components/skills/Skills"
+import Footer from './Footer/Footer';
 
 
 const component = (props) => {
@@ -13,6 +14,7 @@ const component = (props) => {
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
 
         
     </div>
