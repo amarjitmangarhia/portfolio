@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Home.module.css"
 import bootstrap from 'bootstrap'
-import me from "../../images/me.png"
+import me from "../../images/me.webp"
 import Menu from '../menu/Menu'
 import { Link } from 'react-router-dom'
 const Home = () => {

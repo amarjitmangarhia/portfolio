@@ -1,7 +1,7 @@
 import React from 'react'
 import Menu from '../menu/Menu'
 import styles from "../about/About.module.css"
-import img from "../../images/me.png"
+import img from "../../images/me.webp"
 import resume from "../../resume/resume.pdf"
 
 const About = () => {
