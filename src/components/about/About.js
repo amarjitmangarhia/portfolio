@@ -35,6 +35,10 @@ const About = () => {
                             <p>Download Resume</p>
                           <a href={resume} download="amar_resume" target="_blank" rel="noreferrer" >  <button>Resume</button></a>
                         </div>
+                        <div className={styles.connect}>
+                            <p>Github</p>
+                            <a href='https://github.com/amarjitmangarhia' >  <button>Github</button></a>
+                        </div>
                     </div>
 
                 </div>

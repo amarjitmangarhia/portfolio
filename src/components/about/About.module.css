@@ -56,6 +56,10 @@ span {
     font-size: 25px;
 }
 
+.connection .connect {
+    margin: 20px 0;
+}
+
 .connection .connect button{
     
         list-style-type: none;
