@@ -27,6 +27,7 @@ const Projects = () => {
           image={weather_app}
           appName={"Weather App"}
           link={"https://amar-weather.netlify.app/"}
+          githubLink={"https://github.com/amarjitmangarhia/weather-app-main"}
           appDescription={
             "The React Weather App simplifies weather checks. Enter a city name, get instant, real-time weather data. Easy, fast, and user-friendly."
           }
@@ -35,6 +36,7 @@ const Projects = () => {
           image={quotes_app}
           appName={"Workout Buddy"}
           link={"https://mernstackapp-f73d4c3ddb96.herokuapp.com/"}
+          githubLink={""}
           appDescription={
             "Built with the MERN stack—React, MongoDB, Node.js, and Express—this app showcases comprehensive full-stack development expertise, seamlessly integrating frontend and backend functionalities."
           }
@@ -43,6 +45,9 @@ const Projects = () => {
           image={ecommerce}
           appName={"Guess Number Game"}
           link={"https://guess-number-game-main.vercel.app/"}
+          githubLink={
+            "https://github.com/amarjitmangarhia/guess-number-game-main"
+          }
           appDescription={
             "Welcome to the Guess Number Game! Your challenge is to guess a number between 1 and 20. After making your guess, the game will reveal the hidden number to see if you've guessed correctly."
           }
