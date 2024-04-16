@@ -1,150 +1,133 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    height: 100vh;
-    background-color: #F8F5F1;
+  height: 100vh;
+  background-color: #f8f5f1;
 }
 
-
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    padding-top: 70px;
-    width: 100%;
-    place-items: center;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 70px;
+  width: 100%;
+  place-items: center;
+  gap: 30px;
 }
 
 .left {
-    grid-column-start: 2;
-    grid-column-end: 7;
-
+  grid-column-start: 2;
+  grid-column-end: 7;
 }
 
 .left .name,
 .skills {
-    color: #565454;
-    font-size: 1.3em;
-    font-weight: 300;
+  color: #565454;
+  font-size: 1.3em;
+  font-weight: 300;
 }
 
 .left .about {
-    color: #000000;
-    font-weight: 400;
-    font-size: 1.8em;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.8em;
 }
 
 .right {
-    grid-column-start: 9;
-    grid-column-end: 11;
+  grid-column-start: 9;
+  grid-column-end: 11;
 }
 
 .right img {
-    width: 100%;
-    min-width: 350px;
-    min-height: 420px;
-    object-fit: cover;
-    border: 4px solid black;
-    border-radius: 10%;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+  width: 100%;
+  min-width: 350px;
+  min-height: 420px;
+  object-fit: cover;
+  border: 4px solid black;
+  border-radius: 10%;
+  /* -webkit-transform: scaleX(-1); */
+  /* transform: scaleX(-1); */
 }
 
 .buttons {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .linkedin {
-    background-color: #0A66C2;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    height: 45px;
-    width: 130px;
-    margin-right: 10px;
+  background-color: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  width: 130px;
+  margin-right: 10px;
 }
 
 .aboutMe {
-    background-color: #764242;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    height: 45px;
-    width: 130px;
+  background-color: #764242;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  width: 130px;
 }
-
-
 
 @media screen and (max-width: 768px) {
+  .container {
+    height: 100vh;
+    height: 100%;
+    padding-bottom: 25px;
+  }
 
-    .container {
-        height: 100vh;
-        height: 100%;
-        padding-bottom: 25px;
-    }
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
 
-    
+  .left,
+  .right {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 
-    .wrapper {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 20px;
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: -1;
+  }
 
-    }
-
-    .left,
-    .right {
-        grid-column-start: 1;
-        grid-column-end: -1;
-    }
-
-    .right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        grid-row-start: 1;
-        grid-row-end: -1;
-    }
-
-    .right img {
-       
-        width: 100%;
-    }
-
+  .right img {
+    width: 100%;
+  }
 }
 
-
-
-
-
 @media screen and (max-width: 400px) {
-    .right img {
-       min-width: auto;
-       min-height: 350px;
-        width: 100%;
-    }
+  .right img {
+    min-width: auto;
+    min-height: 350px;
+    width: 100%;
+  }
 
+  .buttons {
+    margin-top: 20px;
+  }
 
-    .buttons {
-        margin-top: 20px;
-
-    }
-
-    .linkedin, .aboutMe {
-        margin-top: 8px;
-    }
+  .linkedin,
+  .aboutMe {
+    margin-top: 8px;
+  }
 }
 
 @media screen and (max-width: 310px) {
-    
-
-    .left .name,
-    .skills {
-        font-size: 1.4em;
-        font-weight: 300;
-    }
+  .left .name,
+  .skills {
+    font-size: 1.4em;
+    font-weight: 300;
+  }
 }

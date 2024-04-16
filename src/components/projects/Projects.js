@@ -36,7 +36,7 @@ const Projects = () => {
           image={quotes_app}
           appName={"Workout Buddy"}
           link={"https://mernstackapp-f73d4c3ddb96.herokuapp.com/"}
-          githubLink={""}
+          githubLink={"https://github.com/amarjitmangarhia"}
           appDescription={
             "Built with the MERN stack—React, MongoDB, Node.js, and Express—this app showcases comprehensive full-stack development expertise, seamlessly integrating frontend and backend functionalities."
           }
