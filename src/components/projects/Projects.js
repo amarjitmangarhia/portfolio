@@ -7,6 +7,7 @@ import twitter_app from "../../images/projectImages/twitter.png";
 import guess_number_game from "../../images/projectImages/guess_number_game.png";
 import cricket from "../../images/projectImages/cricket.png";
 import ecommerce from "../../images/projectImages/ecommerce.jpg";
+import handyman from "../../images/projectImages/handyman.png";
 
 const Projects = () => {
   return (
@@ -50,6 +51,15 @@ const Projects = () => {
           }
           appDescription={
             "Welcome to the Guess Number Game! Your challenge is to guess a number between 1 and 20. After making your guess, the game will reveal the hidden number to see if you've guessed correctly."
+          }
+        />
+        <Project
+          image={handyman}
+          appName={"HandyMan Tool Website"}
+          link={"https://frontendprojectwebsite.vercel.app/"}
+          githubLink={"https://github.com/amarjitmangarhia/frontendproject"}
+          appDescription={
+            "Explore my website project dedicated to essential handyman tools, designed to simplify DIY projects effortlessly."
           }
         />
       </div>

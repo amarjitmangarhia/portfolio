@@ -22,13 +22,9 @@ const About = () => {
             ambitious individual hailing from India. With a{" "}
             <span> Bachelor's degree in Computer Applications </span> (BCA) from
             Chandigarh University, I have embarked on a journey to pursue my
-            passion for software development. Currently, I am furthering my
-            knowledge and skills in{" "}
-            <span>
-              {" "}
-              full-stack software development at Lambton College in Sarnia,
-              Ontario, Canada.{" "}
-            </span>
+            passion for software development. I have graduated with advanced
+            knowledge and skills in full-stack software development from Lambton
+            College in Sarnia, Ontario, Canada.
           </p>
 
           <p>
@@ -42,15 +38,6 @@ const About = () => {
             </span>
             . My proficiency in the MERN stack forms the foundation of my
             technical skill set.
-          </p>
-
-          <p>
-            Although I may not possess substantial professional industry
-            experience, I have demonstrated a strong commitment to{" "}
-            <span> self-study </span> and continuous learning to acquire
-            proficiency in these technologies. This self-driven approach has
-            enabled me to stay updated with the latest industry trends and best
-            practices.
           </p>
 
           <p>
