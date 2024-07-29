@@ -8,6 +8,7 @@ import guess_number_game from "../../images/projectImages/guess_number_game.png"
 import cricket from "../../images/projectImages/cricket.png";
 import ecommerce from "../../images/projectImages/ecommerce.jpg";
 import handyman from "../../images/projectImages/handyman.png";
+import next from "../../images/projectImages/next.png";
 
 const Projects = () => {
   return (
@@ -60,6 +61,15 @@ const Projects = () => {
           githubLink={"https://github.com/amarjitmangarhia/frontendproject"}
           appDescription={
             "Explore my website project dedicated to essential handyman tools, designed to simplify DIY projects effortlessly."
+          }
+        />
+        <Project
+          image={next}
+          appName={"Landing Page - Web Design"}
+          link={"https://amarnext.netlify.app/"}
+          githubLink={"https://github.com/amarjitmangarhia/landing-page"}
+          appDescription={
+            "Just Simple Web Design created by me using HTML, CSS, JAVASCRIPT. Fully Responsive."
           }
         />
       </div>
