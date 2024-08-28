@@ -33,7 +33,7 @@ const Home = () => {
               <a
                 style={{ textDecoration: "none", color: "white" }}
                 target="_blank"
-                href="https://www.linkedin.com/in/amarmangarhia/"
+                href="https://www.linkedin.com/in/amarjitsingh1/"
               >
                 {" "}
                 Linkedin{" "}
